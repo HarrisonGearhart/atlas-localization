@@ -17,12 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: app.py:23
+#: app.py:21
 msgid "Hello, World!"
 msgstr ""
 
-#: app.py:28
-#, python-format
+#: app.py:26
 msgid "You have one message"
 msgid_plural "You have %(num)d messages"
 msgstr[0] ""
