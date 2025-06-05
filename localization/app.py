@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-babel translation example
+babel translation (english to french) example
 """
 
 from flask import Flask, request
@@ -9,13 +9,11 @@ from flask_babel import Babel, _, ngettext
 app = Flask(__name__)
 babel = Babel(app)
 
-# Configure default locale and translations directory
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
 app.config['BABEL_TRANSLATION_DIRECTORIES'] = './translations'
 
 @babel.localeselector
 def get_locale():
-    # Select locale from user request Accept-Language headers
     return request.accept_languages.best_match(['en', 'fr'])
 
 @app.route('/')
